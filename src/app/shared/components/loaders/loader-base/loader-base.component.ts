@@ -40,9 +40,9 @@ export class LoaderBaseComponent implements OnInit, OnDestroy, OnChanges {
 
   ngOnChanges() {
 
-    this.loadContent();
-    this.startLoader();
     this.stopInterval();
+    // this.startLoader();
+    this.loadContent();
 
   }
 

@@ -13,8 +13,20 @@ export class HomePage {
   isLoading: boolean = false;
 
   loaderConfig: LoaderConfig = {
-    images: ['https://placehold.co/600x400', 'https://placehold.co/600x400', 'https://placehold.co/600x400'],
-    texts: ['Texto 1', 'Texto 2', 'Texto 3'],
+    images: [
+      'https://picsum.photos/id/1/600/400',
+      'https://picsum.photos/id/2/600/400',
+      'https://picsum.photos/id/3/600/400',
+      'https://picsum.photos/id/4/600/400',
+      'https://picsum.photos/id/5/600/400',
+    ],
+    texts: [
+      'Texto 1',
+      'Texto 2',
+      'Texto 3',
+      'Texto 4',
+      'Texto 5'
+    ],
     interval: 1000,
     visible: true
   }
@@ -29,7 +41,7 @@ export class HomePage {
     setTimeout(() => {
       this.isLoading = false;
       this.router.navigate(['/other']);
-    }, 10000);
+    }, 5000);
 
   }
 }

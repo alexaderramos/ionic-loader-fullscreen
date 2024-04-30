@@ -8,7 +8,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(31, 37, 169, 0.5); /* Fondo semitransparente */
+  background-color: #fff; /* Fondo semitransparente */
   z-index: 9999; /* Asegura que el loader esté por encima de cualquier otro elemento */
   transition: all 0.3s ease-in-out;
+}
+
+
+.loader-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
