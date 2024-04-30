@@ -7,14 +7,26 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
+
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
 
+  <app-loader-base *ngIf="isLoading" [config]="loaderConfig" ></app-loader-base>
+
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Card Header</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </ion-card-content>
+    </ion-card>
+   <ion-button (click)="startLoader()">Open loading</ion-button>
   </div>
 </ion-content>

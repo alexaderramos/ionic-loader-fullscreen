@@ -1,0 +1,14 @@
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(31, 37, 169, 0.5); /* Fondo semitransparente */
+  z-index: 9999; /* Asegura que el loader esté por encima de cualquier otro elemento */
+  transition: all 0.3s ease-in-out;
+}
